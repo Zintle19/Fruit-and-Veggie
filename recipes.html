@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Recipes</title>
+        <link rel="stylesheet" href="recipes.css">
+    </head>
+
+<!-------------------------navigation bar----------------------->
+<nav class="navbar">
+  <div class="logo">
+    <i class="fa-solid fa-seedling">Fruits & Veggie Delight</i>
+  </div>
+  <div class="nav-menu"id="navMenu">
+      <ul>
+          <li><a href="index.html" class="link ">Home</a></li>
+          <li><a href="about.html" class="link">About</a></li>
+          <li><a href="shop.html" class="link">Shop</a></li>
+          <li><a href="contact.html" class="link">Contact</a></li>
+          <li><a href="#" class="link active">Recipes</a></li>
+      </ul>
+      </div>
+      <div class="nav-button">
+
+         <a href="Login.html#login"><button class="btn white-btn" id="loginBtn"><i class='bx bx-user'></i></button></a>
+          <!-- <a href="Login.html#register"><button class="btn" id="registerBtn"><i class='bx bx-user'></i>Sign Up</button></a> -->
+      </div>
+      <!-- <div class="cart">
+        <i class='bx bx-shopping-bag'></i>
+      </div> -->
+      <div class="nav-menu-btn">
+          <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+  </div>
+</nav>
+  <body>
+    <section>
+      <div class="rec-head">Recipes</div>
+        <div class="rec">
+          <video class="cooking" autoplay muted> 
+            <source src="img/eating.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+         <h4>
+         <span class="cook-today"> What would you like to cook today?</span><br>
+          When planning the perfect meals and treats,<br>
+           we trust home-grown family recipes passed on to us by some of our closest customers.<br>
+            Take a look…there's a recipe for every occasion.</h4>
+          <div class="rec-pic">
+            <img src="https://www.spar.co.za/SPAR/media/img/Recipe-Banner-Img.png" id="rec-pic" alt="recipe-picture">
+          </div>
+        </div>
+        
+        <article class="article1">
+        <div class="gallery">
+            <a href="https://www.foodnetwork.com/recipes/photos/broccoli-recipes" target="_blank">
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/8/26/3/WU0802H_Beef-with-Broccoli_s4x3.jpg.rend.hgtvcom.791.594.suffix/1547062094033.jpeg" alt="Broccoli" width="250" height="150" >
+            </a>
+            <div class="desc">Broccoli</div>
+            <p>From cozy soups to hearty stir-fries, it's clear from these recipes that broccoli is more than just a simple side dish (although we love it that way, too!).</p>
+          </div>
+        
+          <div class="gallery">
+            <a href="https://www.eatingwell.com/gallery/8044899/cabbage-recipes-youll-want-to-make-forever/" target="_blank">
+              <img src="https://www.eatingwell.com/thmb/s9ZhVX46jOj5auSWrjR27y1BIFg=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/one-pot-vegetable-soup-with-cabbage-cbbd51c9413e44dcadce11cacd8941cf.jpg" alt="Cabbage" width="250" height="150">
+            </a>
+            <div class="desc">Cabbage</div>
+            <p>Cabbage is one of the best vegetables to cook with. From crunchy slaws to cozy soups and cabbage rolls, the healthy vegetable can be used in a variety of dishes.</p>
+          </div>
+          
+          <div class="gallery">
+            <a href="https://www.acouplecooks.com/carrot-recipes/" target="_blank">
+              <img src="https://www.acouplecooks.com/wp-content/uploads/2020/04/Sauteed-Carrots-013.jpg" alt="Carrots" width="250" height="150">
+            </a>
+            <div class="desc">Carrots</div>
+            <p>Explore these easy carrot recipes for the best creative ways to use this colorful vegetable! Try them glazed, roasted, in soups and salads, and even baked into desserts.</p>
+          </div>
+          
+          <div class="gallery">
+            <a href="https://www.foodnetwork.com/recipes/photos/our-best-eggplant-recipes" target="_blank">
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/plus/fullset/2020/06/08/0/FNM_070120-Grilled-Eggplant-with-Marinated-Feta_s4x3.jpg.rend.hgtvcom.791.594.suffix/1591625113317.jpeg" alt="Eggplant" width="250" height="150">
+            </a>
+            <div class="desc">Eggplant</div>
+            <p>Cheese-topped eggplant Parmesan, savory ratatouille, hearty moussaka and more: there’s almost no limit to the delicious dishes you can make with eggplant.</p>
+          </div>
+          </article>
+
+          <article class="article2">
+          <div class="gallery">
+            <a href="https://www.olivemagazine.com/recipes/collection/best-ever-beetroot-recipes/" target="_blank">
+              <img src="https://images.immediate.co.uk/production/volatile/sites/2/2020/07/Beetroot-Lime-and-Yogurt-Dip-fd7e592-scaled.jpg?quality=90&webp=true&resize=975,649" alt="Beetroot" width="250" height="150">
+            </a>
+            <div class="desc">Beetroot</div>
+            <p>Deep red, earthy beetroot adds depth to salads and vegetarian dishes, from beetroot and goat's cheese terrine to smoked mackerel, beet and apple salad</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.acouplecooks.com/ginger-recipes/" target="_blank">
+              <img src="https://www.acouplecooks.com/wp-content/uploads/2021/12/Ginger-Dressing-004-735x919.jpg" alt="Ginger" width="250" height="150">
+            </a>
+            <div class="desc">Ginger</div>
+            <p>These ginger recipes are the best ways to use fresh ginger root! It’s ultra versatile: use in soups, dressings, tea, desserts, and more.
+
+            </p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.eatingwell.com/gallery/8054533/cucumber-recipes-to-make-forever/" target="_blank">
+              <img src="https://www.eatingwell.com/thmb/Q41yPc8R2PKlBSXZNbBpyzaom_A=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/cucumber-sandwich-eddcc95811f5426094ea5dbea6a6b026.jpg" alt="Cucumber" width="250" height="150">
+            </a>
+            <div class="desc">Cucumber</div>
+            <p>These healthy, flavorful recipes highlight cucumber, a hydrating veggie. There's something for everyone in this collection of four- and five-star rated dishes, </p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.bonappetit.com/recipes/slideshow/mushroom-recipes-slideshow" target="_blank">
+              <img src="https://assets.bonappetit.com/photos/5e5ec025e86a7100087c9b50/1:1/w_1600%2Cc_limit/HLY-Mushroom-Soup-16x9.jpg" alt="Mushrooms" width="250" height="150">
+            </a>
+            <div class="desc">Mushrooms</div>
+            <p>More than a meat substitute, mushrooms star in many of our favorite weeknight dinners, including vegetarian pastas, beefy soups, and savory sandwiches.</p>
+          </div>
+          </article>
+
+          <article class="article3">
+          <div class="gallery">
+            <a href="https://www.acouplecooks.com/best-peas-recipes/" target="_blank">
+              <img src="https://www.acouplecooks.com/wp-content/uploads/2018/02/Simply-Vibrant-Soup-002-735x919.jpg" alt="Peas" width="250" height="150">
+            </a>
+            <div class="desc">Peas</div>
+            <p>Here are all the best peas recipes for using this healthy green veggie! This list of pastas, soups, and salads uses everything from green peas to pea shoots.</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.acouplecooks.com/bell-pepper-recipes/" target="_blank">
+              <img src="https://www.acouplecooks.com/wp-content/uploads/2020/09/Veggie-Breakfast-Scramble-008-735x919.jpg" alt="Peppers" width="250" height="150">
+            </a>
+            <div class="desc">Peppers</div>
+            <p>Here are all the best bell pepper recipes for using this tasty vegetable! Try stuffed, roasted, pizza, fajitas, and more.</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.foodnetwork.com/recipes/photos/potato-recipes" target="_blank">
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/7/25/0/FNK_Melting-Potatoes-H_s4x3.jpg.rend.hgtvcom.791.594.suffix/1532527788288.jpeg" id="pot" alt="Potatoes" width="250" height="150">
+            </a>
+            <div class="desc">Potatoes</div>
+            <p>Baked, roasted, mashed or fried—there's no wrong way to eat potatoes. From hearty meals to healthy sides, get creative with potatoes using these top-notch ideas.</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.allrecipes.com/gallery/best-pumpkin-recipes-of-all-time/" target="_blank">
+              <img src="https://www.allrecipes.com/thmb/vDG00_Y3HRNUHXywGlREfSC04Lo=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/733165-pumpkin-cake-iii-photo-by-momlovestocook-color-corrected-560a0342258b4547a117ec429898893a.jpg" alt="Pumpkin" width="250" height="150">
+            </a>
+            <div class="desc">Pumpkin</div>
+            <p>Just like apple cider, hayrides, and changing leaves, pumpkin is a fall classic. Whether you're stocked up on cans of pumpkin puree or ready to carve into the squash itself, make sure you're.</p>
+          </div>
+          </article>
+
+          <article class="article4">
+          <div class="gallery">
+            <a href="https://www.acouplecooks.com/best-onion-recipes/" target="_blank">
+              <img src="https://www.acouplecooks.com/wp-content/uploads/2021/02/Vegetarian-French-Onion-Soup-005-735x919.jpg" alt="Onions" width="250" height="150">
+            </a>
+            <div class="desc">Onions</div>
+            <p>Here are all the best onion recipes to make starring this tasty root vegetable! It adds irresistible savory flavor to any dish.</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.foodnetwork.com/recipes/photos/spinach-recipes" target="_blank">
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/3/2/2/FNM_040115-Spinach-Frittata-Recipe_s4x3.jpg.rend.hgtvcom.791.594.suffix/1425500506856.jpeg" alt="Spinach" width="250" height="150">
+            </a>
+            <div class="desc">Spinach</div>
+            <p>From fresh leafy salads to veggie-loaded baked pastas (and everything in between) these delicious spinach recipes make it easy to fill up on good-for-you greens.</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.delish.com/cooking/g1463/sweet-corn-recipes/" target="_blank">
+              <img src="https://hips.hearstapps.com/hmg-prod/images/cheddar-bacon-ranch-corn-vertical-64a5bf20244bd.jpg?crop=0.8336666666666667xw:1xh;center,top&resize=980:*" alt="Sweetcorn" width="250" height="150">
+            </a>
+            <div class="desc">Sweet Corn</div>
+            <p>We can't deny that corn is a "great beautiful lump of nobs", but it's also one of THE most versatile ingredients out there. All summer, we'll take corn any way we can get it—baked in a corn cookie,</p>
+          </div>
+          <div class="gallery">
+            <a href="https://www.foodnetwork.com/recipes/photos/best-sweet-potato-recipes" target="_blank">
+              <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2020/11/16/0/FNK_Sweet-Potato-Dip-Pita-Crisps_H2_s4x3.jpg.rend.hgtvcom.791.594.suffix/1605561051193.jpeg" alt="Sweet-potato" width="250 " height="150">
+            </a>
+            <div class="desc">Sweet Potato</div>
+            <p>Sweet potatoes are one of our favorites when the weather gets cold—and for good reason. Whether you stuff, mash, roast or French fry them,</p>
+        </div>
+        </article>
+      <div>
+        
+    </div>
+      </section>
+
+ <!----------------------------------footer--------------->
+ <footer>
+  <div class="footer-container">
+      <!-------------------------------- Quick Links ---------------------->
+      <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="shop.html">Shop</a></li>
+              <li><a href="#">Recipes</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="termsconditions.html">Terms and Conditions</a></li>
+
+              
+          </ul>
+      </div>
+
+      <!-- Social Media Icons -->
+      <div class="footer-section">
+          <h3>Follow Us</h3>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/capacitiza/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://www.instagram.com/capacitiza/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcapacitiza" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://za.linkedin.com/company/capacitiza" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <!-- Newsletter Subscription -->
+      <div class="footer-section">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest updates on our fresh produce and exclusive deals!</p>
+          <form action="#" class="newsletter-form">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit" class="btn">Subscribe</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Fresh Produce Market | All rights reserved</p>
+  </div>
+</footer>
+
+  
+</body>
+</html>

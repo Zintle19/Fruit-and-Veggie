@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="shop.css">
+        <title>Shop</title>
+     </head>
+    <body> 
+        <!----------------------Header------------------------------>
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                  <i class="fa-solid fa-seedling">Fruits & Veggie Delight</i>
+                </div>
+                <div class="nav-menu"id="navMenu">
+                    <ul>
+                        <li><a href="index.html" class="link">Home</a></li>
+                        <li><a href="about" class="link">About</a></li>
+                        <li><a href="#" class="link active">Shop</a></li>
+                        <li><a href="contact.html" class="link">Contact</a></li>
+                        <li><a href="recipes.html" class="link">Recipes</a></li>
+                    </ul>
+                    </div>
+                    <div class="nav-button">
+  
+                       <a href="Login.html#login"><button class="btn white-btn" id="loginBtn"><i class='bx bx-user'></i></button></a>
+                        <!-- <a href="Login.html#register"><button class="btn" id="registerBtn"><i class='bx bx-user'></i>Sign Up</button></a> -->
+                    </div>
+                     <!--Cart-icons-->
+                <div class="cart-icon-container">
+                    <i class="bx bx-shopping-bag" id="cart-icon"></i>
+                    <span class="cart-count" id="cart-count">0</span>
+                </div>
+                    <div class="nav-menu-btn">
+                        <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+           
+                
+               
+                <div class="cart">
+                    <h2 class="cart-title">Your Cart</h2>
+                 <!-------------------Content--------------------->   
+                <div class="cart-content">
+                </div>
+                <!--Total-->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">R0</div>
+                </div>
+                <button type="button" id="" class="btn-checkout">Checkout</button>
+                <!--Cart close-->
+                <i class="bx bx-x" id="close-cart"></i>
+            </div>
+            </div>
+        
+      <!--Shop-->
+      <section class="shop container">
+	 
+	  
+	              <div id="search-container">
+                <input type="search" id="search-input" placeholder="Search products here"/>
+            
+            </div>
+        </header>
+      <!-- <h2-- class="section-title">Shop Products</h2-->
+
+         <!--Content-->
+         <div class="shop-content">
+            <!--Box 1-->
+            <div class="product-box">
+                <img src="img/yellow-peppe.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Yellow Pepper</h2>
+                <span class="price">R14.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+             <!--Box 2-->
+        <div class="product-box">
+                 <img src="img/tomatoes.jpg" alt="" class="product-img">
+                 <h2 class="product-title"> Tomato</h2>
+                 <span class="price">R12.50</span>
+                  <i class="bx bx-shopping-bag add-cart"></i>
+        </div>    
+                <!--Box 3-->
+                <div class="product-box">
+                    <img src="img/potatoes.jpg" alt="" class="product-img">
+                    <h2 class="product-title"> Potatoes</h2>
+                    <span class="price">R17.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 4-->
+                <div class="product-box">
+                    <img src="img/broccoli.jpg" alt="" class="product-img">
+                    <h2 class="product-title"> Broccoli</h2>
+                    <span class="price">R25.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                        <!--Box 5-->
+            <div class="product-box">
+                <img src="img/peppers.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Peppers</h2>
+                <span class="price">R30.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+             <!--Box 1-->
+             <div class="product-box">
+                <img src="img/banana.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Banana</h2>
+                <span class="price">R14.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+             <!--Box 2-->
+        <div class="product-box">
+                 <img src="img/Guava.jpg" alt="" class="product-img">
+                 <h2 class="product-title"> Guava</h2>
+                 <span class="price">R12.50</span>
+                  <i class="bx bx-shopping-bag add-cart"></i>
+        </div>    
+                <!--Box 3-->
+                <div class="product-box">
+                    <img src="img/coconut.jpg" alt="" class="product-img">
+                    <h2 class="product-title"> Coconut</h2>
+                    <span class="price">R17.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                <!--Box 4-->
+                <div class="product-box">
+                    <img src="img/spinach.jpg" alt="" class="product-img">
+                    <h2 class="product-title"> Spinach</h2>
+                    <span class="price">R25.99</span>
+                    <i class="bx bx-shopping-bag add-cart"></i>
+                </div>
+                        <!--Box 5-->
+            <div class="product-box">
+                <img src="img/orange.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Orange</h2>
+                <span class="price">R30.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/peas.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Peas</h2>
+                <span class="price">R15.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/apple.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Apple</h2>
+                <span class="price">R26.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/avocado.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Avocado</h2>
+                <span class="price">R10.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/mango.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Mango</h2>
+                <span class="price">R17.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/cabbage.png" alt="" class="product-img">
+                <h2 class="product-title"> Cabbage</h2>
+                <span class="price">R9.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/carrot.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Carrot</h2>
+                <span class="price">R12.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/mushroom.png" alt="" class="product-img">
+                <h2 class="product-title"> Mushrooms</h2>
+                <span class="price">R22.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/pineapple.png" alt="" class="product-img">
+                <h2 class="product-title"> Pineapple</h2>
+                <span class="price">R14.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/eggplant.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Eggplant</h2>
+                <span class="price">R20.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/ginger.png" alt="" class="product-img">
+                <h2 class="product-title"> Ginger</h2>
+                <span class="price">R19.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/redpepper.png" alt="" class="product-img">
+                <h2 class="product-title"> Red Pepper</h2>
+                <span class="price">R9.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/strawberry.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Strawberry</h2>
+                <span class="price">R24.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/Onion.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Onion</h2>
+                <span class="price">R13.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/green-grapes.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Green Grapes</h2>
+                <span class="price">R17.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/green pepper.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Green Pepper</h2>
+                <span class="price">R8.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/Betroot.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Beetroot</h2>
+                <span class="price">R26.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/red-chili-peppers.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Chillis</h2>
+                <span class="price">R13.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/grapes.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Red Grapes</h2>
+                <span class="price">R20.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/apricot.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Peach</h2>
+                <span class="price">R17.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/watermelon.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Watermelon</h2>
+                <span class="price">R16.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/cucumber.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Cucumber</h2>
+                <span class="price">R14.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+            <div class="product-box">
+                <img src="img/kiwi.jpg" alt="" class="product-img">
+                <h2 class="product-title"> Kiwi</h2>
+                <span class="price">R16.99</span>
+                <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+        </div>
+      </section>
+      <div class="order-info-div">
+        <div class="order-from" >
+            <h3> How to order products from Fruit & Veggie Delight </h3>
+        </div>
+
+        <div class="order-products">
+            <div class="order-process"> 
+           <h3 id="n1"> 1 </h3>
+            <h4> Choose products</h4>
+            <p> We have several varieties of products you can choose from</p>
+            </div>
+              <div  class="order-process"><h3 id="n2"> 2 </h3>
+               <h4> Place an order</h4>
+            <p> Once your order is set, we move to the next step which is shipping</p>
+              </div>
+              <div  class="order-process"><h3 id="n3"> 3 </h3>
+               <h4> Get order delivered</h4>
+            <p> Our delivery process is easy, you receive the order direct to your door</p>
+              </div>
+             </div> 
+            </div>
+
+            <!----------------------------------footer--------------->
+    <footer>
+        <div class="footer-container">
+            <!-------------------------------- Quick Links ---------------------->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="Recipes.html">Recipes</a></li>
+                    <li><a href="contact.html">Contact </a></li>
+                    <li><a href="termsconditions.html">Terms and Conditions</a></li>
+
+                </ul>
+            </div>
+    
+            <!-- Social Media Icons -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/capacitiza/"><i class="fa-brands fa-square-facebook si"></i></a>
+                    <a href="https://www.instagram.com/capacitiza/"><i class="fa-brands fa-square-instagram si"></i></a>
+                    <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcapacitiza"><i class="fa-brands fa-square-x-twitter si"></i></a>
+                    <a href="https://za.linkedin.com/company/capacitiza"><i class="fa-brands fa-linkedin si"></i></a>
+                </div>
+            </div>
+    
+            <!-- Newsletter Subscription -->
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest updates on our fresh produce and exclusive deals!</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fresh Produce Market | All rights reserved</p>
+        </div>
+    </footer>
+      
+        <!--Link to JS-->
+        <script src="shop.js"></script>
+        </body>
+
+     </html>   

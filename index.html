@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Home</title>
+        <link rel="stylesheet" href="Home.css">
+    </head>
+    <body>
+<!-------------------------navigation bar----------------------->
+            <nav class="navbar">
+              <div class="logo">
+                <i class="fa-solid fa-seedling">Fruits & Veggie Delight</i>
+              </div>
+              <div class="nav-menu"id="navMenu">
+                  <ul>
+                      <li><a href="#" class="link active">Home</a></li>
+                      <li><a href="about.html" class="link">About</a></li>
+                      <li><a href="shop.html" class="link">Shop</a></li>
+                      <li><a href="contact.html" class="link">Contact</a></li>
+                      <li><a href="recipes.html" class="link">Recipes</a></li>
+                  </ul>
+                  </div>
+                  <div class="nav-button">
+
+                     <a href="Login.html#login"><button class="btn white-btn" id="loginBtn"><i class='bx bx-user'></i></button></a>
+                      <!-- <a href="Login.html#register"><button class="btn" id="registerBtn"><i class='bx bx-user'></i>Sign Up</button></a> -->
+                    
+                      <div class="cart">
+                        <h2 class="cart-title">Your Cart</h2>
+                     <!-------------------Content--------------------->   
+                    <div class="cart-content">
+                    </div>
+                    <!--Total-->
+                    <div class="total">
+                        <div class="total-title">Total</div>
+                        <div class="total-price">R0</div>
+                    </div>
+                    <button type="button" id="" class="btn-checkout">Checkout</button>
+                    <!--Cart close-->
+                    <i class="bx bx-x" id="close-cart"></i>
+                </div>
+
+                  </div>
+                  <div class="cart">
+                    <i class='bx bx-shopping-bag'></i>
+                  </div>
+                  <div class="nav-menu-btn">
+                      <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+              </div>
+          </nav>
+          <!-----------------------------hero section------------------------->
+          <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Fruits & Veggie Delight</h2>
+                <p>Your one-stop shop for the freshest produce!</p>
+                <button class="btn2"><a href="./shop.html" >Shop Now</a></button>
+            </div>
+        </section>
+        <!--------------------Carousel--------------------------->
+        <section class="featured">
+            <h2>Featured Products</h2>
+            <div class="carousel">
+                <div class="carousel-track">
+                    <div class="carousel-item">
+                        <img src="img/yellow-peppe.jpg" alt="Apples">
+                        <h3>Yellow Pepper</h3>
+                    
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/tomatoes.jpg" alt="Bananas">
+                        <h3>Tomatoes</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/potatoes.jpg" alt="Oranges">
+                        <h3>Potatoes</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/broccoli.jpg" alt="Carrots">
+                        <h3>broccoli</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/peppers.jpg" alt="Carrots">
+                        <h3>Peppers</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/banana.jpg" alt="Carrots">
+                        <h3>Banana</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Guava.jpg" alt="Carrots">
+                        <h3>Guava</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/coconut.jpg" alt="Carrots">
+                        <h3>Cococnut</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/spinach.jpg" alt="Carrots">
+                        <h3>Spinach</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/orange.jpg" alt="Carrots">
+                        <h3>Orange</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/peas.jpg" alt="Carrots">
+                        <h3>Peas</h3>
+                       
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/apple.jpg" alt="Carrots">
+                        <h3>Red Apples</h3>
+                       
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="./Assets/avocado.png" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div> -->
+                    <!-- <div class="carousel-item">
+                        <img src="./Assets/mango.png" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div> -->
+                    <div class="carousel-item">
+                        <img src="img/cabbage.png" alt="Carrots">
+                        <h3>Cabbage</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/carrot.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/mushroom.png" alt="Carrots">
+                        <h3>Mushrooms</h3>
+                        
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="./Assets/pineapple.png" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div> -->
+                    <div class="carousel-item">
+                        <img src="img/eggplant.jpg" alt="Carrots">
+                        <h3>Eggplant</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/ginger.png" alt="Carrots">
+                        <h3>Ginger</h3>
+                        
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="img/carrot.jpg" alt="Carrots">
+                        <h3>Red Pepper</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div> -->
+                    <div class="carousel-item">
+                        <img src="img/strawberry.jpg" alt="Carrots">
+                        <h3>Strawberries</h3>
+                    
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/Onion.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/grapes.jpg" alt="Carrots">
+                        <h3>Grapes</h3>
+                       
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/kiwi.jpg" alt="Carrots">
+                        <h3>Kiwi</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/cucumber.jpg" alt="Carrots">
+                        <h3>Cucumber</h3>
+                        
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/watermelon.jpg" alt="Carrots">
+                        <h3>watermelon</h3>
+                        
+                    </div>
+                    <!-- <div class="carousel-item">
+                        <img src="./Assets/carrots1.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Assets/carrots1.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Assets/carrots1.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./Assets/carrots1.jpg" alt="Carrots">
+                        <h3>Carrots</h3>
+                        <p>Crisp and healthy carrots.</p>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        
+        <!----------------------delivery--------------------------------->
+        <section id="delivery">
+            <h2>Delivery Service</h2>
+            <div class="delivery-info">
+                <div class="delivery-details">
+                    <h3>Fast & Fresh Delivery</h3>
+                    <p>We deliver fresh fruits and vegetables right to your doorstep. Our delivery service is available in selected areas with fast and reliable service.</p>
+                    <ul>
+                        <li>Free delivery for orders over R50</li>
+                        <li>Delivery fee: R5 for orders below R50</li>
+                        <li>Available in the following zones: Zone A, Zone B, Zone C</li>
+                    </ul>
+                    <a href="#contact" class="btn3">Learn More</a>
+                </div>
+                <!-- <div class="delivery-image">
+                    <img src="./Assets/delivery2.jpg" alt="Delivery Truck">
+                </div> -->
+                    <video width="340" height="160" autoplay muted> 
+                        <source src="./Assets/delivery.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                      </video>
+                </div>
+        </section>
+
+        <!-------------------- Modal for Delivery Information ------------------------->
+<div id="delivery-modal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Delivery Information</h2>
+        <p>We offer fast and reliable delivery. Here’s what you need to know:</p>
+        <ul>
+            <li><strong>Zone 1</strong>: Free delivery for orders over R50</li>
+            <li><strong>Zone 2</strong>: R5 delivery fee for all orders</li>
+            <li><strong>Zone 3</strong>: Available for orders over R75</li>
+            <li><strong>Delivery Times</strong>: Monday to Saturday, 9am - 5pm</li>
+        </ul>
+    </div>
+</div>
+
+    
+        <!----------------- New Customer Reviews Section -------------------------->
+    <section id="reviews" class="reviews-section">
+        <h2>What Our Customers Say</h2>
+        <div class="review-carousel">
+            <div class="review-item">
+                <img src="img/p2.jpg" alt="Customer 1" class="customer-img">
+                <h3>Yandisa Ndubela</h3>
+                <p>"The freshest fruits I've ever had! Delivery was fast and the quality is top-notch."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+            <div class="review-item">
+                <img src="img/p3.jpg" alt="Customer 2" class="customer-img">
+                <h3>Zimkhitha Nongomaza</h3>
+                <p>"Fantastic service and the vegetables are always fresh. Highly recommend!"</p>
+                <div class="stars">★★★★☆</div>
+            </div>
+            <div class="review-item">
+                <img src="img/p4.jpg" alt="Customer 3" class="customer-img">
+                <h3>Ntombekhaya Mkaba</h3>
+                <p>"Great value for money and super convenient. I love the variety of organic produce."</p>
+                <div class="stars">★★★★★</div>
+            </div>
+        </div>
+    </section>
+    <!----------------------------------footer--------------->
+    <footer>
+        <div class="footer-container">
+            <!-------------------------------- Quick Links ---------------------->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="termsconditions.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+    
+            <!-- Social Media Icons -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+    
+            <!-- Newsletter Subscription -->
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest updates on our fresh produce and exclusive deals!</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fresh Produce Market | All rights reserved</p>
+        </div>
+    </footer>
+    
+    
+        <script src="Home.js"></script>
+    </body>
+</html>

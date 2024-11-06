@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="about.css">
+    <title>About</title>
+    <style>
+        #more {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-------------------------navigation bar----------------------->
+    <nav class="navbar">
+        <div class="logo">
+          <i class="fa-solid fa-seedling">Fruits & Veggie Delight</i>
+        </div>
+        <div class="nav-menu"id="navMenu">
+            <ul>
+                <li><a href="index.html" class="link">Home</a></li>
+                <li><a href="#" class="link active">About</a></li>
+                <li><a href="shop.html" class="link">Shop</a></li>
+                <li><a href="contact.html" class="link">Contact</a></li>
+                <li><a href="recipes.html" class="link">Recipes</a></li>
+            </ul>
+            </div>
+            <div class="nav-button">
+
+               <!-- <a href="Login.html#login"><button class="btn white-btn" id="loginBtn"><i class='bx bx-user'></i></button></a> -->
+                <a href="Login.html#register"><button class="btn" id="registerBtn"><i class='bx bx-user'></i></button></a>
+            </div>
+           <!-- <div class="cart">
+              <i class='bx bx-shopping-bag'></i>
+            </div>-->
+            <div class="nav-menu-btn">
+                <i class='bx bx-menu' onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <section id="recipes">
+      <h2>Our Delicious Dishes</h2>
+      <div class="slider-container">
+          <div class="slider" id="recipe-slider">
+              <!-- Recipe cards will be added here by JavaScript -->
+          </div>
+      </div>
+  </section>
+
+
+    <!-------------------------Section: About------------------------->
+    <section class="top">
+        <h4>Market that sells fresh produce</h4>
+        <h2>About</h2>
+    </section>
+
+    <section id="About">
+        <div class="about-us-section">
+            <p>Fruits and Veggie Delight was imagined and built up from a place of passion and from a concept of consciousness for sustainable living.</p>
+        </div>
+    </section>
+
+    <section class="about-content">
+        <div class="about-text">
+            <h2>Know where your food is coming from</h2>
+            <p>Our vegetable garden has been cultivated organically, grown around our core ethos of producing and supplying sustainable and healthy food that promotes better health and well-being. Our main principles are health, fairness, and care.</p>
+            <p>Our goal is to protect the health of living organisms, including people and the environment.<span id="dots">...</span><span id="more"> We have business values we refer to as fingerprints, which influence everything we do and leave traces in every action and decision we undertake.</span></p>
+            <button class="read-more-btn" onclick="toggleMore()" id="myBtn">Read more</button>
+        </div>
+        <div class="about-image">
+            <div class="slideshow-container">
+                <div class="slides active"><img src="BI-last one.jpg" alt="Organic Garden"></div>
+                <div class="slides"><img src="img/canva1.jpg" alt="Fresh Produce"></div>
+                <div class="slides"><img src="img/picture1.jpg" alt="Farm Image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------Section: Team------------------------->
+    <section>
+        <div class="team-heading">
+            <h2>Meet Our Team</h2>
+        </div>
+        <div class="our-team">
+            <div class="team-member">
+                <img src="img/MicrosoftTeams-image (1).png" alt="Lutho Ngwala">
+                <h3>Lutho Ngwala</h3>
+                <p class="title">CEO and Founder</p>
+                <p class="content">Lutho, as the CEO and Founder, is responsible for setting the company's vision, mission, and strategy. He has over 10 years of experience in the industry.</p>
+            </div>
+            <div class="team-member">
+                <img src="img/MicrosoftTeams-image.png" alt="Sinelizwi Gebeda">
+                <h3>Sinelizwi Gebeda</h3>
+                <p class="title">Co-Founder</p>
+                <p class="content">Sinelizwi is responsible for critical decision-making, such as funding and hiring, with 8 years of experience in finance.</p>
+            </div>
+            <div class="team-member">
+                <img src="img/MicrosoftTeams-image-zintle.png" alt="Zintle Dyesi">
+                <h3>Zintle Dyesi</h3>
+                <p class="title">Marketing Director</p>
+                <p class="content">Zintle develops and executes marketing strategies to achieve business objectives, with experience managing external vendors and agencies.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------Footer------------------------->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="termsconditions.html">Terms and Conditions</a></li>
+                </ul>
+            </div>
+             <!-- Social Media Icons -->
+             <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/capacitiza/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                  <a href="https://www.instagram.com/capacitiza/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="https://x.com/i/flow/login?redirect_after_login=%2Fcapacitiza" target="_blank"><i class="fa-brands fa-square-x-twitter"></i></a>
+                  <a href="https://za.linkedin.com/company/capacitiza" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              </div>
+            </div>
+    
+            <!-- Newsletter Subscription -->
+            <div class="footer-section">
+                <h3>Subscribe to Our Newsletter</h3>
+                <p>Get the latest updates on our fresh produce and exclusive deals!</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Fresh Produce Market | All rights reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMore() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Read more";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Read less";
+                moreText.style.display = "inline";
+            }
+        }
+
+        let currentIndex = 0;
+        const slides = document.querySelectorAll('.slides');
+
+        function showSlides() {
+            slides.forEach((slide, index) => {
+                slide.style.display = (index === currentIndex) ? 'block' : 'none';
+            });
+            currentIndex = (currentIndex + 1) % slides.length;
+        }
+
+        setInterval(showSlides, 3000);
+        showSlides();
+    </script>
+</body>
+</html>
